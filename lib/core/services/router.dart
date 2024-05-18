@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    // case OnBoardingScreen.routeName:
-    //   return _pageBuilder(
-    //     (context) => const OnBoardingScreen(),
-    //     settings: settings,
-    //   );
+    case OnBoardingScreen.routeName:
+      return _pageBuilder(
+        (context) => const OnBoardingScreen(),
+        settings: settings,
+      );
     default:
       return _pageBuilder(
         (context) => const PageUnderConstruction(),
