@@ -11,4 +11,10 @@ class MediaRes {
 
   //Lottie
   static const pageUnderConstruction = '$_baseLottie/under_construction.json';
+
+  //Vectores
+  static const casualReading = '$_baseVectors/casual_reading.png';
+  static const casualLife = '$_baseVectors/casual_life.png';
+  static const casualMeditationScience =
+      '$_baseVectors/casual_meditation_science.png';
 }
