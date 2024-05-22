@@ -69,8 +69,7 @@ void main() {
 
   group('checkIfUserIsFirstTimer', () {
     test(
-      'should call the [LocalDataSource.checkIfUserIsFirstTimer] and complete '
-      'successfully when the call to the Local source is successful',
+      'should return true when user is first timer',
       () async {
         when(() => localDataSource.checkIfUserIsFirstTimer()).thenAnswer(
           (_) async => true,
