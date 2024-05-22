@@ -10,7 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
-  final pref = SharedPreferences.getInstance();
+  final prefs = await SharedPreferences.getInstance();
   // Feature --> OnBoarding
   // Business Logic
   sl
@@ -24,5 +24,5 @@ Future<void> init() async {
     ..registerLazySingleton<OnBoardingLocalDataSource>(
       () => OnBoardingLocalDataSrcImpl(sl()),
     )
-    ..registerLazySingleton(() => pref);
+    ..registerLazySingleton(() => prefs);
 }
