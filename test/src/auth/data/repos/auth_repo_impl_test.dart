@@ -21,7 +21,7 @@ void main() {
     registerFallbackValue(UpdateUserAction.displayName);
   });
 
-  const tException = ServerException(message: 'message', statusCode: 404);
+  const tException = ServerException(message: 'message', statusCode: '404');
   const tLocalUserModel = LocalUserModel.empty();
 
   test('should be a subclass of [AuthRepo]', () {
