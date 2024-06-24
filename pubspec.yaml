@@ -36,6 +36,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   swipe_to: ^1.0.6
   url_launcher_windows: ^3.1.1
+  uuid: ^4.4.0
   youtube_metadata: ^1.0.1
   
 
