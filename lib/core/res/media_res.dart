@@ -6,10 +6,17 @@ class MediaRes {
   static const _baseLottie = 'assets/lottie';
   static const _baseVectors = 'assets/vectors';
 
+  //Icons
+  static const user = '$_baseIcons/user.png';
+  // ToDo :
+  static const scoreboard = '$_baseIcons/user.png';
+
   //Backgroun
   static const onBoardingBackground = '$_baseImages/on_boarding_background.png';
   static const authGradientBackground =
       '$_baseImages/auth_gradient_background.png';
+  static const profileGradientBackground =
+      '$_baseImages/profile_gradient_background.png';
 
   //Lottie
   static const pageUnderConstruction = '$_baseLottie/under_construction.json';
