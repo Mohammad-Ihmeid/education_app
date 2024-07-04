@@ -1,0 +1,18 @@
+{
+    "id" : "_empty.id",
+    "title" : "_empty.title",
+    "description" : "_empty.description",
+    "numberOfExam" : 0,
+    "numberOfMaterials" : 0,
+    "numberOfVideos" : 0,
+    "groupId" : "_empty.groupId",
+    "image" : null,
+    "createdAt" : {
+        "_seconds" : 1677483548,
+        "_nanoseconds" : 123456000
+    },
+    "updatedAt" : {
+        "_seconds" : 1677483548,
+        "_nanoseconds" : 123456000
+    }
+}

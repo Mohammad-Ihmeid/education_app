@@ -5,6 +5,25 @@ final sl = GetIt.instance;
 Future<void> init() async {
   await _initOnBoarding();
   await _initAuth();
+  await _initCourse();
+}
+
+Future<void> _initCourse() async {
+  sl
+    ..registerFactory(() => CourseCubit(addCourse: sl(), getCourses: sl()))
+    ..registerLazySingleton(() => AddCourse(sl()))
+    ..registerLazySingleton(() => GetCourses(sl()))
+    ..registerLazySingleton<CourseRepo>(() => CourseRepoImp(sl()))
+    ..registerLazySingleton<CourseRemoteDataSrc>(
+      () => CourseRemoteDataSrcImp(
+        firestore: sl(),
+        storage: sl(),
+        auth: sl(),
+      ),
+    )
+    ..registerLazySingleton(() => FirebaseAuth.instance)
+    ..registerLazySingleton(() => FirebaseFirestore.instance)
+    ..registerLazySingleton(() => FirebaseStorage.instance);
 }
 
 Future<void> _initAuth() async {
@@ -28,10 +47,11 @@ Future<void> _initAuth() async {
         cloudStoreClient: sl(),
         dbClient: sl(),
       ),
-    )
-    ..registerLazySingleton(() => FirebaseAuth.instance)
-    ..registerLazySingleton(() => FirebaseFirestore.instance)
-    ..registerLazySingleton(() => FirebaseStorage.instance);
+    );
+  /* مسجلات من قبل في ال Auth */
+  // ..registerLazySingleton(() => FirebaseAuth.instance)
+  // ..registerLazySingleton(() => FirebaseFirestore.instance)
+  // ..registerLazySingleton(() => FirebaseStorage.instance);
 }
 
 Future<void> _initOnBoarding() async {
