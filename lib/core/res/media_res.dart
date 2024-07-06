@@ -10,6 +10,10 @@ class MediaRes {
   static const user = '$_baseIcons/user.png';
   static const scoreboard = '$_baseIcons/scoreboard.png';
   static const microscope = '$_baseIcons/microscope.png';
+  static const casualMeditation = '$_baseIcons/microscope.png';
+  static const courseInfoVideo = '$_baseIcons/video-camera.png';
+  static const courseInfoExam = '$_baseIcons/exam.png';
+  static const courseInfoMaterial = '$_baseIcons/document.png';
 
   //Backgroun
   static const onBoardingBackground = '$_baseImages/on_boarding_background.png';

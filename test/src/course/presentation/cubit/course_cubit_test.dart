@@ -1,11 +1,11 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
+import 'package:education_app/core/errors/exceptions.dart';
+import 'package:education_app/core/errors/failure.dart';
 import 'package:education_app/src/course/data/models/course_model.dart';
 import 'package:education_app/src/course/domain/usecases/add_course.dart';
 import 'package:education_app/src/course/domain/usecases/get_courses.dart';
 import 'package:education_app/src/course/presentation/cubit/course_cubit.dart';
-import 'package:education_app/core/errors/exceptions.dart';
-import 'package:education_app/core/errors/failure.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:education_app/core/utils/typedef.dart';
 import 'package:education_app/src/course/data/models/course_model.dart';
 import 'package:education_app/src/course/domain/entities/course.dart';
-import 'package:education_app/core/utils/typedef.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../../fixtures/fixtures_reader.dart';
